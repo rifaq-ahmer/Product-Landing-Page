@@ -8,12 +8,9 @@ body {
   font-family: "Lato", sans-serif;
   color: black;
 }
-.main-wrapper {
-  margin: 20px;
-}
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 #header-image {
@@ -27,7 +24,7 @@ header {
 .logo {
   width: 60vw;
 }
-ul {
+header ul {
   width: 35vw;
   display: flex;
   flex-direction: row;
@@ -89,7 +86,6 @@ a {
 .description {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
   height: 125px;
   width: 80vw;
@@ -101,4 +97,85 @@ a {
 #video {
   max-width: 500px;
   width: 100%;
+}
+#price {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.price-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 33%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px;
+}
+.price-heading {
+  background-color: grey;
+  color: black;
+  padding: 10px 0;
+  width: 100%;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+ol {
+  margin: 10px 0;
+}
+ol li {
+  padding: 5px 0;
+}
+footer {
+  background-color: gray;
+  margin-top: 20px;
+  padding: 20px;
+  font-weight: 500;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer li {
+  margin: 0 5px;
+}
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+@media (max-width: 425px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header ul li {
+    padding: 5px 0;
+  }
+}
+@media (max-width: 320px) {
+  #price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .price-block {
+    width: 100%;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
